@@ -85,7 +85,7 @@
   </head>
   <body>
     <header id="header">
-      <div class="overlay"></div>
+      <div class="overlay" data-close="menu"></div>
       <a href="index.html#home"
         ><img
           src="assets/images/ferrari-logo.svg"
@@ -116,7 +116,7 @@
       </button>
       <div class="menu">
         <nav>
-          <button type="button" id="btn-close">
+          <button type="button" id="btn-close" data-close="menu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -192,9 +192,9 @@
           <hr />
         </header>
 
-        <p>10 de Julho de 2020</p>
+        <p class="date">10 de Julho de 2020</p>
         <p>
-          Número do Pedido: 000123<small>Cartão de Crédito final 0604</small>
+          Número do Pedido: <span class="order-number">000123</span><small>Cartão de Crédito final <span class="credit-card-end">0604</span></small>
         </p>
 
         <footer class="fixed">
